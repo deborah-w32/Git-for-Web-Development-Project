@@ -1,89 +1,178 @@
 https://codepen.io/deborah-w32/pen/dyYJayY?editors=1100
 
     1. What is Semantic HTML? 
+
 	HTML that gives meaning to our content.
+
     2. What is HTML used for? 
+
 	It is used for the structure of the website - marking up content.
+
     3. What is an attribute and where do we put it? 
+
 	An attribute defines an element of code. You put it in the opening element, after the 	element name (i.e. <h1 id="example">
+
     4. What is the h1 tag used for? How many times should I use it on a page?
-	The h1 tag adds adds importance to a line. h1 is the most important and thus there should be 		only 1.
+
+	The h1 tag adds adds importance to a line. h1 is the most important and thus there should be only 1.
+
     5. Name two tags that have required attributes.
+
+    href
+    img
+
     6. What do we put in the head of our HTML document? 
-	<header>
+
+	The head is where we put out metadata, such as resets.
+
     7. What is an id? 
+
 	An id is an attribute that defines a unique identifier.
+
     8. What elements can I add an id to?
+
 	Any, it is a global attribute. 
+
     9. How many times can I use the same id on a page? 
+
 	There should be only one specific id.
+
     10. What is a class? 
+
 	An attribute that can be used to specify multiple elements, rather than only one.
+
     11. What elements can I add a class to? 
+
 	A class attribute is also a global attribute.
+
     12. How many times can I use the same class on a page? 
+
 	There is no limit.
+
     13. How do I get my link to open in a new tab?
+
 	Give the anchor attribute target="_blank".
+
     14. What is the alt attribute in the image tag used for?
+
 	It provides alternate text in the event that the image does not load. 
+
     15. How do I reference an id?
+
 	# (#exampleid{})
+
     16. What is the difference between a section and a div
+
 	Sections give meaning for Screen-readers and search engines. div is stylistic and just a 	generic container.
+
     17. What is CSS used for? 
+
 	CSS is used for styling your HTML. It states how HTML should be displayed.
+
     18. How to we select an element? Example - every h2 on the page
+
 	h2
+
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+
 	class is a somewhat generic identifier for specific elements that may be used multiple times. 	An id is a specific identifier that should only be used once.
 	For example, you have a page dedicated to cupcakes. Your most prominent cupcake flavor may be 	given and id while other flavors get a class.
+
     20. How do we select classes in CSS?
+
 	.class
+
     21. How do we select a p element with a single class of “human””?
+
 	p.human
+
     22. What is a parent child selector? When would this be useful? 
+
 	The parent child selector gives you the ablilty to select he child element of a parent 	element. This means that it only looks one element below the parent element.
+
     23. How do you select all links within a div with the class of sidebar?
+
 	div.sidebar a
+
     24. What is a pseudo selector?
-	It is a selector that is used define a special state of an element.
+
+	A pseudo selector allows you to style elements that may fluctuate.
+
     25. What do we use the change the spacing between lines?
+
 	line-height
+
     26. What do we use to change the spacing between letters?
+
 	letter-spacing	
+
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+
 	All caps - text-transform:uppercase;
 	All lower - text-transform:lowercase;
 	Capitalize - text-transform:capitalize;
+
     28. How do I add a 1px border around my div that is dotted and black?
+
 	border: 1px dotted black
+
     29. How do I select everything on the page? 
+
 	The wildcard selector *
+
     30. How do I write a comment in CSS?
+
 	/* comment */
+
     31. How do I find out what file I am in, when I am using the command line? 
+
 	pwd
+
     32. Using the command line - how do I see a list of files/folders in my current folder?
+
 	ls
+
     33. How do I remove a file via the command line? Why do I have to be careful with this?
+
 	rm <file> It will permanantly delete the file with no safe gaurds. 
+
     34. Why should I use version control? 
+
 	It allows a team to work simultaneously on the same project.
+
     35. How often should I commit to github?
-	Every time a big change is made or every 20 minutes.
+
+	Every time a significant change is made or every 20 minutes.
+
     36. What is the command we would use to push our repo up to github? 
+
 	git push -u origin <branch-name>
+
     37. Walk me through Lambda's git flow.
-	Fork the master repossitory. Make sure the fork is successful, look for your name next to the repo name. Add your TL as 	a collaborator by going to settings, then collaborators. Clone your repo and copy the link provided. Go back to your
- 	CLI and use the cd (change directory) command to go to the directory you want to clone your forked repo to. Clone your 		repo to the directory you are in using git clone <link>. cd into your repo using cd <repo-name>. Create your own branch 	using git checkout -b 'firstname-lastname'. Now you can work on your own branch. Remember to add (add . ) your changes, 	commit your changes with a comment (git commit -m "Helpful comment") every major change or every 20 minutes, and push 	(git push -u origin branch-name) your changes at the end. Now that your changes are on github, it's time to submit a 	Pull Request. Go back to your project repo, make sure you're in your forked repo. Select Branch:master. This will bring 	a dropdown menu where you can select your branch. Select your branch and select New pull request. This should redirect 	you to the pull request page. Make sure to change the base repositor to your forked repo and not the original master 	you forked. Add your TL as a reviewer and submit your pull request.
+
+	Fork the master repossitory. Make sure the fork is successful, look for your name next to the repo name. Add your TL as a collaborator by going to settings, then collaborators. Clone your repo and copy the link provided. Go back to your CLI and use the cd (change directory) command to go to the directory you want to clone your forked repo to. Clone your repo to the directory you are in using git clone <link>. cd into your repo using cd <repo-name>. Create your own branch using git checkout -b 'firstname-lastname'. Now you can work on your own branch. Remember to add (add . ) your changes, commit your changes with a comment (git commit -m "Helpful comment") every major change or every 20 minutes, and push 	(git push -u origin branch-name) your changes at the end. Now that your changes are on github, it's time to submit a Pull Request. Go back to your project repo, make sure you're in your forked repo. Select Branch:master. This will bring a dropdown menu where you can select your branch. Select your branch and select New pull request. This should redirect you to the pull request page. Make sure to change the base repositor to your forked repo and not the original master you forked. Add your TL as a reviewer and submit your pull request.
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
-	Inline elements don't force new lines in the document flow, but block elements tend to cause line breaks.
+
+	inline elements do not start on new lines and only take as much width as necessary. block elements start on new lines and take on the full width available.
+
     2. What happens when an element is positioned absolutely? 
-	It is positioned relative to the nearest positioned ancestor. If it has no previously positioned ancestors, it uses the 	document body an moves along with page scrolling.
+
+	It is positioned relative to the nearest positioned ancestor. If it has no previously positioned ancestors, it uses the document body an moves along with page scrolling.
+
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+
+    This can be done with the box model.
+
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+
+    <address>, <ul>, and <div> are block by default.
+    <span> and <a> are inline.
+    <button> is inline-display.
+
+
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+
+    The box model is a box that wraps around every HTML element. We can fix it by using box-sizing:border-box. This includes the padding and borders in an element's width.
